@@ -2,8 +2,11 @@ import React from 'react'
 
 function Home() {
     return (
-        <div>
-            <h1>This is HOME! With all the shelves and stuff</h1> 
+        <div className="home-container">
+            <h1 className="home-container-title">MY BOOKSHELVES</h1> 
+            <button className="book-shelf-btn current">Currently reading</button>
+            <button className="book-shelf-btn future">Want to read</button>
+            <button className="book-shelf-btn past">Read</button>
         </div>
     )
 }
