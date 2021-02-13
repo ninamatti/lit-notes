@@ -1,0 +1,28 @@
+{
+    "books": [
+        {
+            "title": "Harry Potter and the Chamber of Secrets",
+            "author": "J.K. Rowling",
+            "isbn": "978-1-4088-4565-3",
+            "cover": "hp_chamber_cover.jpeg",
+            "notes": [],
+            "shelf": "none"
+        },
+        {
+            "title": "Pride & Prejudice",
+            "author": "Jane Austen",
+            "isbn": "978-0-14-119907-8",
+            "cover": "pride_prejudice_cover.jpg",
+            "notes": [],
+            "shelf": "none"
+        },
+        {
+            "title": "Romeo and Juliet",
+            "author": "William Shakespeare",
+            "isbn": "978-0-14-139647-7",
+            "cover": "romeo_juliet.cover.jpg",
+            "notes": [],
+            "shelf": "none" 
+        }
+    ]
+}
