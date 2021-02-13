@@ -64,11 +64,18 @@ header, footer {
   background-color:#00B4D8;
   border: none;
   box-shadow: 0 0.2rem rgba(0, 0, 0, 0.082);
+  color: #fff;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
 }
 
 .home-container {
   padding: 2rem;
   background-color: antiquewhite;
+  min-width: 100%;
 }
 
 .home-container-title {
@@ -79,9 +86,30 @@ header, footer {
 .book-shelf-btn {
   display: block;
   padding: 1rem;
-  min-width: 60%;
-  
+  min-width: 40%;
+  min-height: 5rem;
+  margin: 1rem;
+  background-color: #CAF0F8;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 2px rgba(0, 0, 0, 0.082);
+  outline: none;
+}
 
+.book-shelf-btn:hover {
+  transform: translateY(-2px);
+  background-color: #90E0EF;
 }
 
 
+
+.shelf-container {
+  padding: 2rem;
+  background-color: antiquewhite;
+  min-width: 100%;
+}
+
+.shelf-container-title {
+  margin-bottom: 2rem;
+  display: block;
+}
