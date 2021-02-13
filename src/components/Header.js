@@ -3,7 +3,10 @@ import React from 'react'
 function Header() {
     return (
         <div>
-            <header>I AM YOUR HEADER111!!</header>
+            <header>
+                <h1>LIT NOTES</h1>
+                <h3>What are you reading today?</h3>
+            </header>
         </div>
     )
 }
