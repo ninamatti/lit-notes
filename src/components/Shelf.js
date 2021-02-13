@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import shelf1 from '../img/shelf1.png';
 
 function Shelf() {
     return (
-        <div>
-            <h1>This is the shelf component - displays a shelf and its list of books</h1>
+        <div className="shelf-container">
+            <h1 className="shelf-container-title">SHELF 1: Books I'm currently reading</h1> 
+            <img src={shelf1} alt="shelf-img-1"></img>
+            
         </div>
     )
 }
