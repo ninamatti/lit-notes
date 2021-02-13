@@ -15,11 +15,11 @@ function App() {
       <section className="main">
         <BrowserRouter>
           <div className="sidenav nav-list">
-            <button className="btn"><Link to="/home">Home</Link></button>
-            <button className="btn"><Link to="/shelf">Shelf</Link></button>
-            <button className="btn"><Link to="/book">Book</Link></button>
-            <button className="btn"><Link to="/note">Note</Link></button>
-            <button className="btn"><Link to="/profile">Profile</Link></button>
+            <button className="btn"><Link to="/home" className="nav-link">Home</Link></button>
+            <button className="btn"><Link to="/shelf" className="nav-link">Shelf</Link></button>
+            <button className="btn"><Link to="/book" className="nav-link">Book</Link></button>
+            <button className="btn"><Link to="/note" className="nav-link">Note</Link></button>
+            <button className="btn"><Link to="/profile" className="nav-link">Profile</Link></button>
           </div>
           <Switch>
             <Route path="/home" >
