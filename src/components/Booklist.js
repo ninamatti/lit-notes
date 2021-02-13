@@ -1,9 +1,14 @@
 import React from 'react'
+import Book from './BookListview'
 
 function Booklist() {
     return (
-        <div>
-            <h1>This is the booklist component! Displays list of books</h1>
+        <div className="booklist-container">
+            <h1>List of Books</h1>
+            <div className="book-list-filtered">
+                
+                <Book />
+            </div>
         </div>
     )
 }

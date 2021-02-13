@@ -113,3 +113,12 @@ header, footer {
   margin-bottom: 2rem;
   display: block;
 }
+
+.booklist-container {
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: #CAF0F8;
+  width: 80%;
+  border-radius: 0.3rem;
+
+}
