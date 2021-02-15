@@ -3,23 +3,26 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Shelf from './components/Shelf';
-import Book from './components/BookListview';
+import Book from './components/BookSingleview';
 import Profile from './components/Profile';
 import NoteScrollview from './components/NoteScrollview';
 import './App.css';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const activeShelf = useSelector(state => state.activeShelfId);
+
   return (
     <div className="App">
       <Header />
       <section className="main">
         <BrowserRouter>
           <div className="sidenav nav-list">
-            <button className="btn"><Link to="/home" className="nav-link">Home</Link></button>
-            <button className="btn"><Link to="/shelf" className="nav-link">Shelf</Link></button>
-            <button className="btn"><Link to="/book" className="nav-link">Book</Link></button>
-            <button className="btn"><Link to="/note" className="nav-link">Note</Link></button>
-            <button className="btn"><Link to="/profile" className="nav-link">Profile</Link></button>
+            <button className="btn"><Link to="/home" className="nav-link">HOME</Link></button>
+            <button className="btn"><Link to="/shelf" className="nav-link">SHELF</Link></button>
+            <button className="btn"><Link to="/book" className="nav-link">BOOK</Link></button>
+            <button className="btn"><Link to="/note" className="nav-link">NOTE</Link></button>
+            <button className="btn"><Link to="/profile" className="nav-link">PROFILE</Link></button>
           </div>
           {/* <div className="v-divider"></div> */}
           <Switch>
@@ -27,7 +30,7 @@ function App() {
               <Home />
             </Route>
             <Route path="/shelf">
-              <Shelf />
+              <Shelf  shelfName={activeShelf}/>
             </Route>
             <Route path="/book">
               <Book />
