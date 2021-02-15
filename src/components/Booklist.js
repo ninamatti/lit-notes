@@ -6,7 +6,6 @@ function Booklist() {
         <div className="booklist-container">
             <h1>List of Books</h1>
             <div className="book-list-filtered">
-                
                 <Book />
             </div>
         </div>

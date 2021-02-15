@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Shelf from './components/Shelf';
 import Book from './components/BookListview';
 import Profile from './components/Profile';
-import Noteview from './components/Noteview';
+import NoteScrollview from './components/NoteScrollview';
 import './App.css';
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
             <button className="btn"><Link to="/note" className="nav-link">Note</Link></button>
             <button className="btn"><Link to="/profile" className="nav-link">Profile</Link></button>
           </div>
+          {/* <div className="v-divider"></div> */}
           <Switch>
             <Route path="/home" >
               <Home />
@@ -32,7 +33,7 @@ function App() {
               <Book />
             </Route>
             <Route path="/note">
-              <Noteview />
+              <NoteScrollview />
             </Route>
             <Route path="/profile">
               <Profile />

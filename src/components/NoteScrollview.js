@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Noteview() {
+function NoteScrollview() {
     return (
         <div>
             <h1>This is the noteview</h1>
@@ -8,4 +8,4 @@ function Noteview() {
     )
 }
 
-export default Noteview
+export default NoteScrollview
