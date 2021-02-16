@@ -1,14 +1,17 @@
-import React from 'react';
-import shelf1 from '../img/shelf1.png';
+import shelf1 from '../img/2shelves_one.png';
 import Booklist from './Booklist';
-import Profile from './Profile'
+import { useSelector } from 'react-redux';
 
-function Shelf() {
+function Shelf( { shelfName} ) {
+    const actShelfIndex = shelfName;
+    const allShelves = useSelector(state => state.shelfData);
+    const activeShelfContent = allShelves[actShelfIndex];
+
     return (
         <div className="shelf-container">
-            <h1 className="shelf-container-title">SHELF 1: Books I'm currently reading</h1> 
+            <h1 className="shelf-container-title">Shelf:   {activeShelfContent.shelfName}</h1> 
             <img src={shelf1} alt="shelf-img-1" className="shelf-img"></img>
-            <Booklist />
+            <Booklist bookIds={activeShelfContent.bookIds}/>
         </div>
     )
 }
