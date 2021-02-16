@@ -21,15 +21,26 @@ Main 1:
   box-sizing: border-box;
 }
 
-root {
-  line-height: 62.5%;
+html {
+  font-size: 62.5%;
+  font-family: 'Chivo', sans-serif;
 }
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+
 
 header, footer {
   background-color: #00B4D8;
   color: #fff;
-  padding: 20px;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.082);
+  padding: 2rem;
+  box-shadow: 0 .3rem rgba(0, 0, 0, 0.082);
 }
 
 .App {
@@ -44,9 +55,9 @@ header, footer {
 
 .sidenav {
   width: 7%;
-  min-width: 5rem;
+  min-width: 9rem;
   background-image: linear-gradient(to bottom left, rgb(238, 236, 236),#CAF0F8);
-  padding-right: 1rem;
+  padding-right: 2rem;
   padding-top: 1.5rem;
 }
 
@@ -58,8 +69,8 @@ header, footer {
   border-radius: 50%;
   margin: 10px;
   margin-top: 20px;
-  width: 4rem;
-  height: 4rem;
+  width: 6.5rem;
+  height: 6rem;
   cursor: pointer;
   background-color:#00B4D8;
   border: none;
@@ -84,18 +95,40 @@ header, footer {
 }
 
 .home-container-title {
-  margin-bottom: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  margin-left: 10rem;
+  font-size: 3rem;
   display: block;
+}
+
+.home-container_content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.home-container_left {
+  margin-top: 2rem;
+  width: 40%;
+}
+
+.home-container_right {
+  width: 50%;
+}
+
+.home-img {
+  width: 55rem;
+  margin-right: 5rem;
 }
 
 .book-shelf-btn {
   display: block;
   padding: 1rem;
-  min-width: 40%;
-  min-height: 5rem;
-  margin: 1rem;
+  min-width: 70%;
+  min-height: 12rem;
+  margin: 1.5rem;
   background-color: #CAF0F8;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   border: none;
   box-shadow: 0 2px rgba(0, 0, 0, 0.082);
   outline: none;
@@ -115,15 +148,61 @@ header, footer {
 }
 
 .shelf-container-title {
+  margin-top: 2rem;
   margin-bottom: 2rem;
+  margin-left: 2rem;
   display: block;
+  font-size: 3rem;
 }
 
 .booklist-container {
   margin-top: 3rem;
+  margin-left: 2rem;
   padding: 1rem;
   background-color: #CAF0F8;
   width: 80%;
   border-radius: 0.3rem;
 
 }
+
+/*  book card  */
+.book-card {
+  display: block;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 3rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  height: 30rem;
+  background-color: #fff;
+}
+
+.booklist-container h1 {
+  margin-top: 2rem;
+  margin-left: 2.5rem;
+  font-size: 3rem;
+}
+
+.book-card h2 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+
+.card-content {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card-content__img-container {
+  margin-right: 2rem;
+}
+
+.book-card__img {
+  height: 20rem;
+  width: auto;
+}
+
+.card-content__card-info {
+  font-size: 1.8rem;
+}
+
