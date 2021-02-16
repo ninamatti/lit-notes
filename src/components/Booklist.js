@@ -6,7 +6,6 @@ function Booklist({ bookIds }) {
     const bookData = useSelector(state => state.books);
     const listLength = bookIds.length;
 
-
     return (
         <div className="booklist-container">
             <h1>List of Books</h1>
