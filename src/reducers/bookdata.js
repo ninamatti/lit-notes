@@ -25,7 +25,16 @@ const bookData =
             "title": "Romeo and Juliet",
             "author": "William Shakespeare",
             "isbn": "978-0-14-139647-7",
-            "cover": "romeo_juliet.cover.jpg",
+            "cover": "romeo_juliet_cover.jpg",
+            "notes": [],
+            "shelf": "none" 
+        },
+        {
+            "id": 40,
+            "title": "Thinking, fast and slow",
+            "author": "Daniel Kahneman",
+            "isbn": "978-0-374-53355-7",
+            "cover": "thinking_fast_and_slow_cover.jpg",
             "notes": [],
             "shelf": "none" 
         }
