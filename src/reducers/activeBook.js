@@ -1,7 +1,7 @@
 
-const activeShelfReducer = (state = 0, action) => {
+const activeBookReducer = (state = 0, action) => {
     switch(action.type) {
-        case 'CHANGE_ACTIVE_SHELF':
+        case 'CHANGE_ACTIVE_BOOK':
             state = action.payload;
             return state;
         default:
@@ -9,4 +9,4 @@ const activeShelfReducer = (state = 0, action) => {
     }
 }
 
-export default activeShelfReducer;
+export default activeBookReducer;
