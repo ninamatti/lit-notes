@@ -15,15 +15,19 @@ Main 1:
 
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
 }
 
 html {
   font-size: 62.5%;
-  font-family: 'Chivo', sans-serif;
+
 }
 
 h1 {
@@ -132,14 +136,13 @@ header, footer {
   border: none;
   box-shadow: 0 2px rgba(0, 0, 0, 0.082);
   outline: none;
+  font-size: 2.5rem;
 }
 
 .book-shelf-btn:hover {
   transform: translateY(-2px);
   background-color: #90E0EF;
 }
-
-
 
 .shelf-container {
   padding: 2rem;
@@ -175,6 +178,7 @@ header, footer {
   border-radius: 1rem;
   height: 30rem;
   background-color: #fff;
+
 }
 
 .booklist-container h1 {
@@ -199,10 +203,55 @@ header, footer {
 
 .book-card__img {
   height: 20rem;
-  width: auto;
+  width: 15rem;
 }
 
 .card-content__card-info {
   font-size: 1.8rem;
 }
 
+.singleview-container {
+  width: 90%;
+  margin: 3rem;
+}
+
+.singleview-container .book-card {
+  width: 50%;
+}
+
+.note-slider {
+  height: 30rem;
+  width: 100%;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  border-radius: 1rem;
+  background-color: #CAF0F8;
+  box-shadow: 2px 2px 3px #999;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.slider-note {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  height: 25rem;
+  width: 30rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+.slider-note_title {
+  font-size: 2rem;
+}
+
+.slider-note_content {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  width: 25rem;
+  height: 74%;
+  white-space: normal;
+  overflow: hidden;
+}
