@@ -1,21 +1,21 @@
+
 const shelfData = [
     {
         "shelfName": "Currently Reading",
         "bookIds": [
-            20
+            10, 20
         ],
     },
     {
         "shelfName": "Want to read",
         "bookIds": [
-            10, 30
+            30
         ],
     },
     {
     "shelfName": "Have read",
         "bookIds": [
             40
-            
         ],
     }
 ]
@@ -31,7 +31,5 @@ const shelfReducer = (state = shelfData, action) => {
             return state;
     }
 }
-
-
 
 export default shelfReducer;
