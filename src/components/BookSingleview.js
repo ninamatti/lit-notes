@@ -27,7 +27,7 @@ function BookSingleview() {
 
                 <div className="quick-note-container">
                     <input className="quick-title-input" type="text"></input>
-                    <input className="quick-note-content-input" type="text"></input>
+                    <textarea className="quick-note-content-input" name="Text1" cols="40" rows="5"></textarea>
                 </div>
             </div>
             <div className="note-slider">

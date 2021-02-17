@@ -178,7 +178,7 @@ header, footer {
   border-radius: 1rem;
   height: 30rem;
   background-color: #fff;
-
+  vertical-align: bottom;
 }
 
 .booklist-container h1 {
@@ -262,10 +262,21 @@ header, footer {
   padding-right: 4rem;
   padding-top: 3rem;
   margin: 1rem;
+  width: 45%;
   border-radius: 1rem;
   background-color: #fff;
+  vertical-align: bottom;
 }
 
 .quick-title-input {
-  
+  display: block;
+  width: 95%;
+}
+
+.quick-note-content-input {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 3rem;;
+  width: 95%;
+  min-height: 70%;
 }
