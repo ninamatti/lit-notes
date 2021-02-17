@@ -24,17 +24,20 @@ function BookSingleview() {
                         </div>
                     </div>         
                 </div>
+
+                <div className="quick-note-container">
+                    <input className="quick-title-input" type="text"></input>
+                    <input className="quick-note-content-input" type="text"></input>
+                </div>
             </div>
             <div className="note-slider">
                 {notes.map((note) => {
-                    for(let i = 0; i < notes.length; i++) {
                             return (
                                 <div className="slider-note" key={note.id}>
                                     <h4 className="slider-note_title">{note.title}</h4>
                                     <p className="slider-note_content">{note.content}</p>
                                 </div>   
                             )     
-                    }  
                 })}
             </div>
         </div>

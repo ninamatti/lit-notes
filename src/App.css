@@ -170,7 +170,7 @@ header, footer {
 
 /*  book card  */
 .book-card {
-  display: block;
+  display: inline-block;
   padding-left: 4rem;
   padding-right: 4rem;
   padding-top: 3rem;
@@ -254,4 +254,18 @@ header, footer {
   height: 74%;
   white-space: normal;
   overflow: hidden;
+}
+
+.quick-note-container {
+  display: inline-block;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 3rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+}
+
+.quick-title-input {
+  
 }
