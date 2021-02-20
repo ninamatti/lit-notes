@@ -18,7 +18,9 @@ Main 1:
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&display=swap');
 
-* {
+*,
+*:before, 
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -34,11 +36,20 @@ h1 {
   font-size: 4rem;
 }
 
+h2 {
+  font-size: 3rem;
+  margin: 1rem;
+  color: #fff;
+}
+
 h3 {
   font-size: 2rem;
 }
 
-
+header {
+  display: flex;
+  justify-content: space-between;
+}
 
 header, footer {
   background-color: #00B4D8;
@@ -47,9 +58,73 @@ header, footer {
   box-shadow: 0 .3rem rgba(0, 0, 0, 0.082);
 }
 
+.btn-logout {
+  border-radius: 50%;
+  margin: 10px;
+  width: 6.5rem;
+  height: 6rem;
+  cursor: pointer;
+  background-color:#CAF0F8;
+  border: none;
+  box-shadow: 0 0.2rem rgba(0, 0, 0, 0.082);
+  color: #03045E;
+}
+
+.btn-logout:hover {
+  transform: translateY(.3rem);
+}
+
 .App {
   background-image: linear-gradient(to bottom left, #00B4D8,#CAF0F8);
 }
+
+
+/*** login page ***/
+
+.login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20rem;
+}
+
+.login-input_email,
+.login-input_password {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: 1rem;
+  width: 40rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  border: .2rem solid #0077B6;
+  outline: none;
+}
+
+.login-submit-btn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin: 1rem;
+  width: 40rem;
+  font-size: 1.5rem;
+  border-radius: 2rem;
+  background-color:#00B4D8;
+  color: #fff;
+  border: .2rem solid #0077B6;
+  box-shadow: .5rem .5rem  .2rem rgba(0, 0, 0, 0.151);
+  outline: none;
+}
+
+.login-submit-btn:hover {
+  cursor: pointer;
+  background-color: #0077B6;
+  transform: translateY(.2rem);
+}
+
+/*** main view with sidenav ***/
 
 .main {
   display: flex;
@@ -80,6 +155,10 @@ header, footer {
   border: none;
   box-shadow: 0 0.2rem rgba(0, 0, 0, 0.082);
   color: #fff;
+}
+
+.sidenav .btn:hover {
+  transform: translateY(.3rem);
 }
 
 .nav-link {
