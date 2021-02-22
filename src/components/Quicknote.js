@@ -8,7 +8,8 @@ function Quicknote() {
     const activeBook = useSelector(state => state.activeBookId);
 
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault();
         console.log("hi");
     }
 
