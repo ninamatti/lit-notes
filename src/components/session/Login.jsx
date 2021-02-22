@@ -1,13 +1,18 @@
 import { useState } from 'react';
 import fire from '../../fire.js';
+import { useHistory } from 'react-router-dom';
 
 const Login = () => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
+    const history = useHistory();
     
     const handleSubmit = (e) => {
         e.preventDefault();
         fire.auth().signInWithEmailAndPassword(email, password)
+            .then((user) => {
+                history.push("/home");
+            })
             .catch((error) => {
             console.error('Incorrect username or password');
         });

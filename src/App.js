@@ -24,13 +24,16 @@ function App() {
 
   return (
     <div className="App">
-      <Header loginStatus={isLoggedIn}/>
-      <section className="main">
+      
         <BrowserRouter>
-          
+        <Header loginStatus={isLoggedIn}/>
+        <section className="main">
           {!isLoggedIn ?
             (
             <Switch>
+              <Route exact="true" path="/">
+                <Login />
+              </Route>
               <Route path="/login">
                 <Login />
               </Route>
@@ -69,11 +72,9 @@ function App() {
             </>
             )
           }
-          
-        </BrowserRouter>
-        
-      </section>
-      <Footer />
+        </section>
+        <Footer />
+      </BrowserRouter> 
     </div>
   );
 }

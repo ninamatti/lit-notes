@@ -1,8 +1,17 @@
 import fire from '../fire.js';
+import { useHistory } from 'react-router-dom';
 
-function Header( { loginStatus }) {
+function Header({ loginStatus }) {
+    let history = useHistory();
+
     const signOut = () => {
         fire.auth().signOut()
+        .then((user) => {
+            history.push('/login')
+            })
+           .catch((error) => {
+                console.log(error.message);
+            });
     };
 
     return (
@@ -21,4 +30,4 @@ function Header( { loginStatus }) {
     )
 }
 
-export default Header
+export default Header;
