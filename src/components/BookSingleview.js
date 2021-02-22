@@ -26,8 +26,16 @@ function BookSingleview() {
                 </div>
 
                 <div className="quick-note-container">
-                    <input className="quick-title-input" type="text"></input>
-                    <textarea className="quick-note-content-input" name="Text1" cols="40" rows="5"></textarea>
+                    <input className="quick-title-input" 
+                                    type="text"
+                                    placeholder="What's this note about?"></input>
+                    <textarea className="quick-note-content-input" 
+                            name="Text1" 
+                            cols="40" 
+                            rows="5"
+                            placeholder="All of your amazing thoughts go here!"></textarea>
+                     <button type="submit"
+                            className="submit-new-quicknote-btn"> Save new note </button>
                 </div>
             </div>
             <div className="note-slider">
