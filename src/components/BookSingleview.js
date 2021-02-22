@@ -13,13 +13,13 @@ function BookSingleview() {
         <div className="singleview-container">
             <div className="top-wrapper">
                 <div className="book-card">
-                    <h2>{title}</h2>
+                    <h2 className="singleview-booktitle">{title}</h2>
                     <div className="card-content">
                         <div className="card-content__img-container">
                             <img src={coverPath} className="img book-card__img"/>
                         </div>
                         <div className="card-content__info-container">
-                            <div className="card-content__card-info"><b>Author:</b> {title}</div>
+                            <div className="card-content__card-info"><b>Author:</b> {bookData[activeBook].author}</div>
                             <div className="card-content__card-info"><b>ISBN:</b> {bookData[activeBook].isbn}</div>
                         </div>
                     </div>         

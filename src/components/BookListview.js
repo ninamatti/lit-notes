@@ -23,7 +23,7 @@ function Book({ bookIndex }) {
 
     return (
         <div className="book-card" onClick={showThisBook}>
-            <h2>{title}</h2>
+            <h2 className="listview-booktitle">{title}</h2>
             <div className="card-content">
                 <div className="card-content__img-container">
                     <img src={coverPath} className="img book-card__img"/>

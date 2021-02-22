@@ -42,6 +42,11 @@ h2 {
   color: #fff;
 }
 
+h2.singleview-booktitle,
+h2.listview-booktitle {
+  color: black;
+}
+
 h3 {
   font-size: 2rem;
 }
