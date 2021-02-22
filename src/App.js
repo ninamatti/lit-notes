@@ -31,7 +31,7 @@ function App() {
           {!isLoggedIn ?
             (
             <Switch>
-              <Route exact="true" path="/">
+              <Route exact={true} path="/">
                 <Login />
               </Route>
               <Route path="/login">
@@ -50,7 +50,7 @@ function App() {
               <button className="btn"><Link to="/profile" className="nav-link">PROFILE</Link></button>
             </div>
             <Switch>
-              <Route exact="true" path="/" >
+              <Route exact={true} path="/" >
                 <Home />
               </Route>
               <Route path="/home" >
