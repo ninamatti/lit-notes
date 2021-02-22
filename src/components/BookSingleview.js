@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
-import BookListview from './BookListview'
+import Quicknote from './Quicknote';
+import BookListview from './BookListview';
 
 function BookSingleview() {
     const bookData = useSelector(state => state.books);
@@ -26,16 +27,7 @@ function BookSingleview() {
                 </div>
 
                 <div className="quick-note-container">
-                    <input className="quick-title-input" 
-                                    type="text"
-                                    placeholder="What's this note about?"></input>
-                    <textarea className="quick-note-content-input" 
-                            name="Text1" 
-                            cols="40" 
-                            rows="5"
-                            placeholder="All of your amazing thoughts go here!"></textarea>
-                     <button type="submit"
-                            className="submit-new-quicknote-btn"> Save new note </button>
+                    <Quicknote />
                 </div>
             </div>
             <div className="note-slider">
