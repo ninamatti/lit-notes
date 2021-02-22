@@ -370,6 +370,7 @@ header, footer {
   margin-bottom: 3rem;
   width: 95%;
   min-height: 35%;
+  resize: none;
 }
 
 .submit-new-quicknote-btn {
