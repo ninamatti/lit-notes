@@ -43,9 +43,13 @@ h2 {
 }
 
 h2.singleview-booktitle,
-h2.listview-booktitle {
+h2.listview-booktitle,
+h2.quick-note-input {
   color: black;
-  margin: 0;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -254,6 +258,7 @@ header, footer {
 }
 
 /*  book card  */
+
 .book-card {
   display: inline-block;
   padding-left: 4rem;
@@ -347,6 +352,7 @@ header, footer {
   padding-right: 4rem;
   padding-top: 3rem;
   margin: 1rem;
+  height: 30rem;
   width: 45%;
   border-radius: 1rem;
   background-color: #fff;
@@ -361,9 +367,9 @@ header, footer {
 .quick-note-content-input {
   display: block;
   margin-top: 1rem; 
-  margin-bottom: 3rem;;
+  margin-bottom: 3rem;
   width: 95%;
-  min-height: 70%;
+  min-height: 35%;
 }
 
 .submit-new-quicknote-btn {
