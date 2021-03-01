@@ -10,7 +10,7 @@ function Quicknote() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("hi");
+        console.log("title: ", quicknoteTitle);
     }
 
     return (
@@ -19,12 +19,14 @@ function Quicknote() {
             <form onSubmit={handleSubmit}>
                 <input className="quick-title-input" 
                             type="text"
-                            placeholder="What's this note about?"></input>
+                            placeholder="What's this note about?"
+                            onChange={({ target }) => setTitle(target.value)}></input>
                 <textarea className="quick-note-content-input" 
                     name="Text1" 
                     cols="40" 
                     rows="5"
-                    placeholder="All of your amazing thoughts go here!"></textarea>
+                    placeholder="All of your amazing thoughts go here!"
+                    onChange={({ target }) => setContent(target.value)}></textarea>
                 <button type="submit"
                      className="submit-new-quicknote-btn"> Save new note </button>
             </form>
