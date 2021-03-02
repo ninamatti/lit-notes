@@ -10,7 +10,7 @@ function Quicknote() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("title: ", quicknoteTitle);
+        console.log("title: ", quicknoteTitle, "content: ", quicknoteContent);
     }
 
     return (
