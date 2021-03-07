@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
+import { addToNotes } from '../services/noteServices';
 
 function Quicknote() {
     const [quicknoteTitle, setTitle] = useState();
@@ -10,6 +11,10 @@ function Quicknote() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (quicknoteTitle && quicknoteContent) {
+            addToNotes(quicknoteTitle, quicknoteContent);
+        }
+        console.log('You must enter a name and a number');
         console.log("title: ", quicknoteTitle, "content: ", quicknoteContent);
     }
 
